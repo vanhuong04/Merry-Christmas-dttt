@@ -530,3 +530,15 @@ body {
     padding: 15px;
   }
 }
+
+.tiktok-logo {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1000;
+}
+
+.tiktok-logo img {
+  width: 35px;
+  height: auto;
+}
