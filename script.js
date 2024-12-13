@@ -71,6 +71,7 @@ setInterval(createSnow, 200);
 // Thêm vào cuối file
 const musicBtn = document.querySelector('.music-toggle');
 const audio = document.getElementById('bgMusic');
+audio.play()
 
 musicBtn.addEventListener('click', () => {
   if (audio.paused) {
@@ -109,10 +110,10 @@ function createGift() {
   gift.style.top = '-50px';
 
   const messages = [
-    '🎁 Chúc mừng! Bạn nhận được một điều ước',
-    '🎄 Giáng sinh an lành!',
-    '⭐ Năm mới hạnh phúc!',
-    '🎅 Ho Ho Ho! Quà từ ông già Noel',
+    '🎁 Chúc bạn kiếm được nhiều tiền để ăn Tết nhá',
+    '🎄 Chúc Trang Giáng sinh an lành!',
+    '⭐ Chúc Trang mãi mãi sẽ không biết buồn',
+    '🎅 Sau này đừng quên mình nhen',
   ];
 
   gift.addEventListener('click', () => {
@@ -327,9 +328,8 @@ function decorateTree() {
 
     for (let i = 0; i < numOrnaments; i++) {
       const ornament = document.createElement('div');
-      ornament.className = `ornament ${
-        colors[Math.floor(Math.random() * colors.length)]
-      }`;
+      ornament.className = `ornament ${colors[Math.floor(Math.random() * colors.length)]
+        }`;
 
       // Vị trí ngẫu nhiên trong phạm vi của tầng
       const left = 20 + Math.random() * 60; // 20% đến 80%
